@@ -4,15 +4,11 @@ class Palindrome
 {
 	//Boolean function checks if a given integer is a Palindrome.
 	boolean checkPal(int inputNum)
-	{
-		boolean isPalindrome = false;
-		
+	{		
 		//The following 3 lines convert the integer to a char array.
 		int numLength = Integer.toString(inputNum).length();
 
-		String numString = Integer.toString(inputNum);
-		
-		char [] charNum = numString.toCharArray();
+		char [] charNum = Integer.toString(inputNum).toCharArray();
 		
 		int k = 0;
 		
@@ -21,18 +17,12 @@ class Palindrome
 		{
 			if(charNum[i] != charNum[(numLength - 1) - k])
 			{
-				isPalindrome = false;
-				break;
-			}
-			else if(charNum[i] == charNum[(numLength - 1) - k])
-			{
-				isPalindrome = true;
+				return false;
 			}
 			k++;
 		}
-		
 		//Return result.
-		return isPalindrome;
+		return true;
 	}
 	
 	int [] sortPalindromes(List<Integer> palNums)
