@@ -8,6 +8,8 @@ class bigFactor
 		{
 			
 		}
+		
+		return inputNum;
 	}
 	
 	int getFactor(int primeLimit)
@@ -21,10 +23,11 @@ class bigFactor
 			//Iterate our prime Iterator.
 			primeIterator++;
 			
-			if(primeIterator %)
+			//if(primeIterator %)
 		}
 		//Mod 2 to check value is not even.
 		//Divide value into 13195.
+		return primeLimit;
 	}
 	
 	public static void main(String [] args)
