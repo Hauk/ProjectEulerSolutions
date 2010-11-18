@@ -3,7 +3,7 @@ import java.math.BigInteger;
 
 class SumDigits
 {
-	int calcSum(int userValue, int powValue)
+	int calcSum(int powValue)
 	{
 		int finResult = 0;
 		
@@ -33,6 +33,6 @@ class SumDigits
 		
 		SumDigits sumUp = new SumDigits();
 		
-		System.out.println("The sum value of the result digits powered is: " + sumUp.calcSum(2, 1000));
+		System.out.println("The sum value of the result digits powered is: " + sumUp.calcSum(1000));
 	}
 }
